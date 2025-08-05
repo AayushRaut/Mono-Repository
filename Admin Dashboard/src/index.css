@@ -1,1 +1,167 @@
 @import "tailwindcss";
+
+
+:root {
+    --primary-gray-25 : #FDFDFD;
+    --primary-gray-50 : #FAFAFA;
+    --primary-gray-100 : #F5F5F5;
+    --primary-gray-200 : #E9EAEB;
+    --primary-gray-300 : #D5D7DA;
+    --primary-gray-400 : #A4A7AE;
+    --primary-gray-500 : #717680;
+    --primary-gray-600 : #535862;
+    --primary-gray-700 : #414651;
+    --primary-gray-800 : #252B37;
+    --primary-gray-900 : #181D27;
+    --primary-gray-950 : #0A0D12;
+
+    --primary-brand-25 : #F5FBFF;
+    --primary-brand-50 : #F0F9FF;
+    --primary-brand-100 : #E0F2FE;
+    --primary-brand-200 : #B9E6FE;
+    --primary-brand-300 : #7CD4FD;
+    --primary-brand-400 : #36BFFA;
+    --primary-brand-500 : #0BA5EC;
+    --primary-brand-600 : #0086C9;
+    --primary-brand-700 : #026AA2;
+    --primary-brand-800 : #065986;
+    --primary-brand-900 : #0B4A6F;
+    --primary-brand-950 : #062C41;
+
+    --primary-error-25 : #FFFBFA;
+    --primary-error-50 : #FEF3F2;
+    --primary-error-100 : #FEE4E2;
+    --primary-error-200 : #FECDCA;
+    --primary-error-300 : #FDA29B;
+    --primary-error-400 : #F97066;
+    --primary-error-500 : #F04438;
+    --primary-error-600 : #D92D20;
+    --primary-error-700 : #B42318;
+    --primary-error-800 : #912018;
+    --primary-error-900 : #912018;
+    --primary-error-950 : #55160C;
+
+    --primary-warning-25 : #FFFCF5;
+    --primary-warning-50 : #FFFAEB;
+    --primary-warning-100 : #FEF0C7;
+    --primary-warning-200 : #FEDF89;
+    --primary-warning-300 : #FEC84B;
+    --primary-warning-400 : #FDB022;
+    --primary-warning-500 : #F79009;
+    --primary-warning-600 : #DC6803;
+    --primary-warning-700 : #B54708;
+    --primary-warning-800 : #93370D;
+    --primary-warning-900 : #7A2E0E;
+    --primary-warning-950 : #4E1D09;
+
+    --primary-success-25 : #F6FEF9;
+    --primary-success-50 : #ECFDF3;
+    --primary-success-100 : #D1FADF;
+    --primary-success-200 : #A6F4C5;
+    --primary-success-300 : #6CE9A6;
+    --primary-success-400 : #32D583;
+    --primary-success-500 : #12B76A;
+    --primary-success-600 : #039855;
+    --primary-success-700 : #027A48;
+    --primary-success-800 : #05603A;
+    --primary-success-900 : #054F31;
+    --primary-success-950 : #053321;
+}
+
+.theme-blue .theme-container:is(.dark *){
+    --primary-brand-25 : #F5FBFF;
+    --primary-brand-50 : #F0F9FF;
+    --primary-brand-100 : #E0F2FE;
+    --primary-brand-200 : #B9E6FE;
+    --primary-brand-300 : #7CD4FD;
+    --primary-brand-400 : #36BFFA;
+    --primary-brand-500 : #0BA5EC;
+    --primary-brand-600 : #0086C9;
+    --primary-brand-700 : #026AA2;
+    --primary-brand-800 : #065986;
+    --primary-brand-900 : #0B4A6F;
+    --primary-brand-950 : #062C41;
+}
+.theme-purple .theme-container{
+    --primary-brand-25 : #FAFAFF;
+    --primary-brand-50 : #F4F3FF;
+    --primary-brand-100 : #EBE9FE;
+    --primary-brand-200 : #D9D6FE;
+    --primary-brand-300 : #BDB4FE;
+    --primary-brand-400 : #9B8AFB;
+    --primary-brand-500 : #7A5AF8;
+    --primary-brand-600 : #6938EF;
+    --primary-brand-700 : #5925DC;
+    --primary-brand-800 : #4A1FB8;
+    --primary-brand-900 : #3E1C96;
+    --primary-brand-950 : #27115F;
+}
+
+@theme inline {
+  --color-gray-25: var(--primary-gray-25);
+  --color-gray-50: var(--primary-gray-50);
+  --color-gray-100: var(--primary-gray-100);
+  --color-gray-200: var(--primary-gray-200);
+  --color-gray-300: var(--primary-gray-300);
+  --color-gray-400: var(--primary-gray-400);
+  --color-gray-500: var(--primary-gray-500);
+  --color-gray-600: var(--primary-gray-600);
+  --color-gray-700: var(--primary-gray-700);
+  --color-gray-800: var(--primary-gray-800);
+  --color-gray-900: var(--primary-gray-900);
+  --color-gray-950: var(--primary-gray-950);
+
+  --color-brand-25: var(--primary-brand-25);
+  --color-brand-50: var(--primary-brand-50);
+  --color-brand-100: var(--primary-brand-100);
+  --color-brand-200: var(--primary-brand-200);
+  --color-brand-300: var(--primary-brand-300);
+  --color-brand-400: var(--primary-brand-400);
+  --color-brand-500: var(--primary-brand-500);
+  --color-brand-600: var(--primary-brand-600);
+  --color-brand-700: var(--primary-brand-700);
+  --color-brand-800: var(--primary-brand-800);
+  --color-brand-900: var(--primary-brand-900);
+  --color-brand-950: var(--primary-brand-950);
+
+  --color-error-25: var(--primary-error-25);
+  --color-error-50: var(--primary-error-50);
+  --color-error-100: var(--primary-error-100);
+  --color-error-200: var(--primary-error-200);
+  --color-error-300: var(--primary-error-300);
+  --color-error-400: var(--primary-error-400);
+  --color-error-500: var(--primary-error-500);
+  --color-error-600: var(--primary-error-600);
+  --color-error-700: var(--primary-error-700);
+  --color-error-800: var(--primary-error-800);
+  --color-error-900: var(--primary-error-900);
+  --color-error-950: var(--primary-error-950);
+
+  --color-warning-25: var(--primary-warning-25);
+  --color-warning-50: var(--primary-warning-50);
+  --color-warning-100: var(--primary-warning-100);
+  --color-warning-200: var(--primary-warning-200);
+  --color-warning-300: var(--primary-warning-300);
+  --color-warning-400: var(--primary-warning-400);
+  --color-warning-500: var(--primary-warning-500);
+  --color-warning-600: var(--primary-warning-600);
+  --color-warning-700: var(--primary-warning-700);
+  --color-warning-800: var(--primary-warning-800);
+  --color-warning-900: var(--primary-warning-900);
+  --color-warning-950: var(--primary-warning-950);
+
+  --color-success-25: var(--primary-success-25);
+  --color-success-50: var(--primary-success-50);
+  --color-success-100: var(--primary-success-100);
+  --color-success-200: var(--primary-success-200);
+  --color-success-300: var(--primary-success-300);
+  --color-success-400: var(--primary-success-400);
+  --color-success-500: var(--primary-success-500);
+  --color-success-600: var(--primary-success-600);
+  --color-success-700: var(--primary-success-700);
+  --color-success-800: var(--primary-success-800);
+  --color-success-900: var(--primary-success-900);
+  --color-success-950: var(--primary-success-950);
+
+}
+
